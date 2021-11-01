@@ -1,0 +1,62 @@
+<br />
+<br />
+
+<ol>
+    <li>Starting at Root, your options are A and B. You choose A.</li>
+    <li>At A, your options are C and D. You choose C.</li>
+   <li>C is bad. Go back to A.</li> 
+    <li>At A, you have already tried C, and it failed. Try D.</li>
+   <li>D is bad. Go back to A.</li> 
+    <li>At A, you have no options left to try. Go back to Root.</li>
+   <li> At Root, you have already tried A. Try B.</li>
+    <li>At B, your options are E and F. Try E.</li>
+  <li>  E is good. Congratulations!</li>
+</ol>
+<p>
+    In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. 
+There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have.
+(If we do have an actual tree data structure, backtracking on it is called <i>depth-first tree searching.</i>)
+</p>
+<h3>
+    The backtracking algorithm.
+</h3>
+<p>
+    Here is the algorithm (in pseudocode) for doing backtracking from a given node n:
+ </p>
+ <pre>
+     <b>
+       boolean solve(Node n) {
+        if n is a leaf node {
+            if the leaf is a goal node, return true
+            else return false
+        } else {
+            for each child c of n {
+                if solve(c) succeeds, return true
+            }
+            return false
+        }
+    }
+</pre>
+</b>
+
+</b>
+<pre>
+    <iframe
+     width="560" 
+     height="315" 
+     src="https://www.youtube.com/embed/JhKHFHiGseo" 
+     title="YouTube video player"
+      frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        ></iframe>
+<a href="https://www.google.com/">Go to Google</a>
+<a href="author.html">About the author</a>
+<a href="https://www.prepbytes.com/">Go to Prepbytes</a>
+</pre>  
+</body>
+
+
+
+
+

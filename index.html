@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1>Bactracking</h1>
+    <h5> Copyright ©2002 by David Matuszek</h5>
+    <p>Backtracking is a form of recursion.</p>
+    <p>
+        The usual <em>scenario</em> is that you are faced with a <i>number</i>  of options, and you must choose one of these.<br />
+     After you make your choice you will get a new set of options; just what set of options you get depends on what choice you made. 
+    <br /> This <b>procedure</b> is repeated over and over until you reach a final state. If you made a good sequence of choices, 
+     your final state is a goal state; if you didn't, it isn't.
+    </p>
+     <p>
+         Conceptually, you start at the root of a tree; the tree probably has some good leaves and some bad leaves, 
+     though it may be that the <strong>leaves</strong> are all good or all bad. You want to get to a good leaf. At each node,
+     beginning with the root, you choose one of its<ins> children</ins> to move to, and you keep this up until you get to a leaf.
+    </p>
+     <p>
+         Suppose you get to a<del> bad</del> leaf. You can<sub> backtrack </sub>to continue the search for a good leaf by revoking your most recent choice,
+     and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, 
+     <strike>and try another choice at that node.</strike> 
+     If you end up at the root with no options left, there are no good leaves to be<sup> found</sup>.
+    </p>
+    <p> This needs an example</p> 
+    <p align="center"><img src="image_project.gif"/></p>
+    
+        <br /> 
+    </hr>
+    <pre> 
+        <b>
+               int main ()
+               {
+                   int a;
+                   int b;
+                   int sum=a+b;
+               }
+    </pre>
+    <br />
+    <br />
+    <table border="1px" cellpadding="5px" cellpadding="10px" >
+        <thead>
+               <tr>
+                  <th></th>
+                  <th>test</th>
+                  <th>test</th>
+                  <th>test</th>
+               </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>Data</td>
+                <td colspan="2">Data</td>
+                <td>Data</td>
+                
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="2" align="center">
+       <thead>
+           <tr align="center">
+            <th rowspan="4">data 2 span </th>
+            <th>data 2</th>
+            <th rowspan="2">data</th>
+           </tr>
+           <tr>   
+                <th>dta 4</th>
+           </tr>
+       </thead>
+    </table>
+    <iframe  src="https://www.prepbytes.com"  scrolling="auto"  frameborder="1"  width="100%" height="380px" > 
+    </iframe>
+</html>
